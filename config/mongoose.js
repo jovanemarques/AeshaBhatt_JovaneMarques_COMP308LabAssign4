@@ -10,7 +10,7 @@ module.exports = function () {
 		useNewUrlParser: true, useCreateIndex: true 
 		}).then(() => console.log('DB Connected!'))
 		.catch(err => {
-		console.log('Error');
+		    console.log('DB Connection Error');
 		});
 
     return db;

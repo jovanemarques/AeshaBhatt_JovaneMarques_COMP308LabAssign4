@@ -3,17 +3,16 @@
   "version": "1.0.0",
   "description": "Assign 4",
   "main": "server.js",
-  "scripts": {
-    "start": "nodemon server.js"
-  },
-  "author": "Aesha / Jovane",
-  "license": "ISC",
-  "devDependencies": {
-    "nodemon": "^1.18.10"
+  "author": {
+    "name": "Aesha/Jovane"
   },
   "dependencies": {
+    "@tensorflow/tfjs": "^1.7.0",
+    "@tensorflow/tfjs-node": "^1.7.0",
     "body-parser": "^1.19.0",
     "compression": "^1.7.4",
+    "csvtojson": "^2.0.8",
+    "ejs": "^3.0.1",
     "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
     "express": "^4.16.4",
@@ -21,5 +20,12 @@
     "method-override": "^3.0.0",
     "mongoose": "^5.4.22",
     "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "scripts": {
+    "start": "nodemon server",
+    "dev": "nodemon server"
   }
 }
